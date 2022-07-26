@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {AnimatePresence, motion} from "framer-motion";
 
 import {observer} from "mobx-react-lite";
@@ -7,11 +7,6 @@ import {fetchCategories, fetchWorks} from "../http/portfolioAPI";
 import {WORK_ROUTE} from "../utils/consts";
 import {useNavigate} from "react-router";
 
-
-import sprint from "../static/thumbnails/7087b952-1ee2-4363-abca-8072ba3e6bf9.svg"
-import this_site from "../static/thumbnails/efb36397-2122-4a54-af3f-d26cc7fccaed.svg";
-import digital_craft from "../static/thumbnails/23211bff-3c8c-4a9e-b347-2332042701ca.svg";
-import worldskills from "../static/thumbnails/9470097f-5ea9-4c1b-b39a-5f973eb98fef.svg";
 
 const Portfolio = observer(() => {
     const {work} = useContext(Context)
@@ -48,16 +43,7 @@ const Portfolio = observer(() => {
 
                                                     className="portfolio__work col-12 col-sm-6 h-100 d-flex flex-column justify-content-center align-items-center">
                                             <img className="portfolio__work_image mb-2"
-
-                                                //TODO: GH-PAGES
-                                                /*#region GH-PAGES*/
-                                                 src={filteredWork.thumbnail}
-                                                /*#endregion GH-PAGES*/
-
-                                                //TODO: FullStack
-                                                /*#region FullStack*/
-                                                 /*src={process.env.REACT_APP_API_URL +  filteredWork.thumbnail}*/
-                                                /*#endregion FullStack*/
+                                                 src={process.env.REACT_APP_API_URL +  filteredWork.thumbnail}
                                             />
 
                                             <h1 className="portfolio__work_name text-center mb-2">{filteredWork.name}</h1>

@@ -104,6 +104,7 @@ const Work = () => {
                     <div className="work__gallery">
                         {images.map(image =>
                             <motion.img
+                                key={image.id}
                                 initial={{opacity: 0, x: 100}}
                                 whileInView={{opacity: 1, x: 0}}
                                 viewport={{once: true}}
