@@ -25,7 +25,7 @@ const Portfolio = observer(() => {
                 initial={{ y:10, opacity: 0 }}
                 animate={{y:0, opacity: 1 }}
                 exit={{y:10, opacity: 0 }}
-                className="portfolio mx-auto px-5 px-sm-4 px-md-0" style={{maxWidth: 576}}>
+                className="portfolio mx-auto px-4 px-sm-4 px-md-0" style={{maxWidth: 576}}>
 
                     {work.categories.map(category =>
                         <div className="portfolio__category d-flex flex-column justify-content-start align-items-start my-5" key={category.id}>

@@ -26,7 +26,7 @@ const Work = () => {
                 initial={{y: 10, opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 exit={{y: 10, opacity: 0}}
-                className="work mx-auto px-5 px-sm-4 px-md-0" style={{maxWidth: 576}}>
+                className="work mx-auto px-4 px-sm-4 px-md-0" style={{maxWidth: 576}}>
                 <Breadcrumb className="breadcrumbs" spacing='8px' separator={<BreadcrumbSeparator color='white'/>}>
                     <BreadcrumbItem>
                         <BreadcrumbLink className="breadcrumbs__link" as={NavLink}
