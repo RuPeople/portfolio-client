@@ -42,6 +42,7 @@ const Portfolio = observer(() => {
                                                     whileHover={{scale:1.025}}
 
                                                     className="portfolio__work col-12 col-sm-6 h-100 d-flex flex-column justify-content-center align-items-center">
+
                                             <img className="portfolio__work_image mb-2"
                                                  src={process.env.REACT_APP_API_URL +  filteredWork.thumbnail}
                                             />

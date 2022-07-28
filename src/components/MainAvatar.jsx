@@ -15,7 +15,7 @@ const MainAvatar = () => {
                 <h1 className="mb-3">David Chamurliev</h1>
                 <h2 className="d-block">artist / developer / <s>playboy / philanthropist</s></h2>
             </div>
-            <Image className="main__avatar_image mx-auto ms-sm-auto mx-sm-0 mt-3 mt-sm-0" roundedCircle style={{width: 96, height: 96}} src={avatar_image} />
+            <Image className="main__avatar_image mx-auto ms-sm-auto mx-sm-0 mt-3 mt-sm-0" alt="avatar" roundedCircle style={{width: 96, height: 96}} src={avatar_image} />
         </motion.div>
     );
 };
