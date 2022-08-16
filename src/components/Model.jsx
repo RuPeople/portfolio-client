@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, {useEffect, useRef} from "react";
 import { useGLTF } from "@react-three/drei";
 
 import model from "../static/dog.gltf"
@@ -6,6 +6,7 @@ import model from "../static/dog.gltf"
 export default function Model({ ...props }) {
     const group = useRef();
     const { nodes, materials } = useGLTF(model);
+
     return (
         <group position={[0,-2,0]} scale={2.5} ref={group} {...props} dispose={null}>
             <mesh

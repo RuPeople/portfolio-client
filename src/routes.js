@@ -1,9 +1,18 @@
-import {ADMIN_ROUTE, AUTH_ROUTE, LOGIN_ROUTE, MAIN_ROUTE, PORTFOLIO_ROUTE, WORK_ROUTE} from "./utils/consts";
+import {
+    ADMIN_ROUTE,
+    AUTH_ROUTE,
+    LOGIN_ROUTE,
+    MAIN_ROUTE,
+    PORTFOLIO_ROUTE,
+    TABLE_ROUTE,
+    WORK_ROUTE
+} from "./utils/consts";
 import Main from "./pages/Main";
 import Portfolio from "./pages/Portfolio";
 import Work from "./pages/Work";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
+import My_TablePage from "./pages/My_TablePage";
 
 export const authRoutes = [
     {
@@ -32,5 +41,9 @@ export const publicRoutes = [
     {
         path: LOGIN_ROUTE,
         Component: Auth
+    },
+    {
+        path: TABLE_ROUTE,
+        Component: My_TablePage
     },
 ]

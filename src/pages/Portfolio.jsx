@@ -4,8 +4,10 @@ import {AnimatePresence, motion} from "framer-motion";
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 import {fetchCategories, fetchWorks} from "../http/portfolioAPI";
-import {WORK_ROUTE} from "../utils/consts";
+import {TABLE_ROUTE, WORK_ROUTE} from "../utils/consts";
 import {useNavigate} from "react-router";
+
+import tableImage from "../static/TableImage.png"
 
 
 const Portfolio = observer(() => {
@@ -55,6 +57,29 @@ const Portfolio = observer(() => {
                             </div>
                         </div>
                     )}
+
+
+                {/*<div className="portfolio__category d-flex flex-column justify-content-start align-items-start my-5">
+                    <h1 className="mb-2 h-auto w-auto pb-1" >Library</h1>
+                    <div className="d-flex flex-column flex-sm-row justify-content-between row row-cols-1 row-cols-sm-2 flex-wrap g-2 w-100">
+                        <motion.div onClick={() => navigate(TABLE_ROUTE)}
+                                    style={{cursor:"pointer"}}
+                                    initial={{ opacity: 0, x:100 }}
+                                    whileInView={{ opacity: 1, x:0 }}
+                                    viewport={{ once: true }}
+                                    whileHover={{scale:1.025}}
+
+                                    className="portfolio__work col-12 col-sm-6 h-100 d-flex flex-column justify-content-center align-items-center">
+
+                            <img className="portfolio__work_image mb-2"
+                                 src={tableImage}
+                            />
+
+                            <h1 className="portfolio__work_name text-center mb-2">Table</h1>
+                            <p className="portfolio__work_description justify-content-center w-100 text-center text-break">Simple table with sorting and filters</p>
+                        </motion.div>
+                    </div>
+                </div>*/}
             </motion.section>
         </AnimatePresence>
     );
